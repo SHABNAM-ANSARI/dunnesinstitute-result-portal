@@ -44,17 +44,17 @@ const KG: SubjectDef[] = [
   { name: "Value Education", type: "credit" },
 ];
 
-// Class 1 – 5 (primary): include GK + Handwriting
+// Class 1 – 5 (primary): switch core subjects to credit/grade-only
 const PRIMARY: SubjectDef[] = [
-  { name: "English", type: "regular" },
-  { name: "Hindi", type: "regular" },
-  { name: "Marathi", type: "regular" },
-  { name: "Maths", type: "regular" },
-  { name: "Science", type: "regular" },
-  { name: "Social Studies", type: "regular" },
-  { name: "GK", type: "regular" },
-  { name: "Handwriting", type: "regular" },
-  { name: "Computer", type: "regular" },
+  { name: "English", type: "credit" },
+  { name: "Hindi", type: "credit" },
+  { name: "Marathi", type: "credit" },
+  { name: "Maths", type: "credit" },
+  { name: "Science", type: "credit" },
+  { name: "Social Studies", type: "credit" },
+  { name: "GK", type: "credit" },
+  { name: "Handwriting", type: "credit" },
+  { name: "Computer", type: "credit" },
   { name: "Drawing", type: "credit" },
   { name: "Music", type: "credit" },
   { name: "P.T.", type: "credit" },
@@ -166,4 +166,3 @@ export const getOverallResult = (
 ): "PASS" | "FAIL" => {
   return computePercentage(marks, regularSubjects) >= PASSING_MARKS ? "PASS" : "FAIL";
 };
-
