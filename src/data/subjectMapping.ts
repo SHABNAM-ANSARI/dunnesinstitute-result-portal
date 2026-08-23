@@ -8,7 +8,7 @@ export interface SubjectDef {
   type: SubjectType;
 }
 
-export const GRADE_OPTIONS = ["A+", "A", "B","B+" "C", "D"] as const;
+export const GRADE_OPTIONS = ["A+", "A", "B","B+", "C", "D"] as const;
 export type GradeValue = (typeof GRADE_OPTIONS)[number];
 
 export const PASSING_MARKS = 35;
