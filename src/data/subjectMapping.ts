@@ -8,10 +8,10 @@ export interface SubjectDef {
   type: SubjectType;
 }
 
-export const GRADE_OPTIONS = ["A+", "A", "B","B+", "C", "D"] as const;
+export const GRADE_OPTIONS = ["A+", "A", "B","B+", "C","C+","D","E"] as const;
 export type GradeValue = (typeof GRADE_OPTIONS)[number];
 
-export const PASSING_MARKS = 35;
+export const PASSING_MARKS = 33;
 export const MAX_MARKS = 100;
 
 // --- Subject sets per class (strictly filtered) ---
